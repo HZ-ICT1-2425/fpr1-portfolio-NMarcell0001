@@ -9,8 +9,9 @@
     padding: 3px;
 }
 
-.body {
+body {
     background-color: deepskyblue;
+    padding-bottom: 1%;
 }
 
 #longfont {
@@ -22,14 +23,8 @@
     text-underline-offset: 8px;
 }
 
-.top-left-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px;
-}
 
-.top-right-nav {
+.top-right-nav, .top-left-nav {
     position: absolute;
     top: 0;
     right: 0;
@@ -167,8 +162,4 @@
     font-style: oblique;
     font-weight: bold;
     border-radius: 10px;
-}
-
-body {
-    padding-bottom: 1%;
 }

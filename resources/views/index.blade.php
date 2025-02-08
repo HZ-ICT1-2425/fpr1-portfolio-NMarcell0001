@@ -122,7 +122,6 @@
             <img src="pictures/screenshot-2.png" width="45%" alt="Screenshot of my program output">
             <img src="pictures/screenshot-3.png" style="width:30%;" alt="Another screenshot of the program">
         </h2>
-        <footer align="center" id="ftr">Website made by Marcell Nemes</footer>
     </div>
 </section>
 
@@ -150,7 +149,7 @@
         <div class="content is-small has-text-centered">
             <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a> | adapted by <a
                         href="https://github.com/dwaard">BugSlayer</a></p>
-            <p>PROJECT FOOTER HERE</p>
+            <footer align="center" id="ftr">Website made by Marcell Nemes</footer>
         </div>
     </div>
 </footer>
