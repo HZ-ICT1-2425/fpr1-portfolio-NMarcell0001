@@ -44,7 +44,7 @@
         </th>
         <th id="blogpage">First Feedback blog<p id="smoltext" align="left">Reading your motivation, nice to see that
                 you are interested in ...
-                <a href="blogs/firstfeedback.html" id="readmore">Read more</a>
+                <a href="blogs/firstfeedback" id="readmore">Read more</a>
             </p>
         </th>
     </tr>

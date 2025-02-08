@@ -18,7 +18,7 @@
     <h1 align="right"><a href="/" title="Home Page" id="dashboard">Home Page</a></h1>
     <h1 align="right"><a href="profile" title="My profile" id="dashboard">Profile</a></h1>
     <h1 align="right"><a href="dashboard" title="Dashboard" id="dashboard">Dashboard</a></h1>
-    <h1 align="right"><a href="blog/blogindex" title="Blog" id="dashboard">Blog</a></h1>
+    <h1 align="right"><a href="blog" title="Blog" id="dashboard">Blog</a></h1>
 </nav>
 <h1 align="left" <span id="basestyle"></span>
 </span><b>1. How do you print on your laptop?</b></h1>
