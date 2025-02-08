@@ -11,12 +11,12 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-<h1 align="center"><span id="bigsign">N. Marcell's Profile Page!</h1>
+<h1 align="center"><span id="bigsign">N. Marcell's Profile Page!</span></h1>
 <nav class="top-right-nav">
     <h1 align="right"><a href="/" title="Home Page" id="dashboard">Home Page</a></h1>
-    <h1 align="right"><a href="dashboard.blade.php" title="Dashboard" id="dashboard">Dashboard</a></h1>
-    <h1 align="right"><a href="faq.blade.php" title="FAQ" id="dashboard">FAQ</a></h1>
-    <h1 align="right"><a href="blog/blogindex.blade.php" title="Blog" id="dashboard">Blog</a></h1>
+    <h1 align="right"><a href="dashboard" title="Dashboard" id="dashboard">Dashboard</a></h1>
+    <h1 align="right"><a href="faq" title="FAQ" id="dashboard">FAQ</a></h1>
+    <h1 align="right"><a href="blog/blogindex" title="Blog" id="dashboard">Blog</a></h1>
 </nav>
 <h1 align="left" id=basestyle><b>Name:</b>
 </h1>

@@ -16,10 +16,10 @@
     <div class="container">
         <nav class="top-right-nav">
             <aside>
-                <h1 align="right"><a href="dashboard.blade.php" title="Dashboard" id="dashboard">Dashboard</a></h1>
+                <h1 align="right"><a href="dashboard" title="Dashboard" id="dashboard">Dashboard</a></h1>
                 <h1 align="right"><a href="profile" title="My profile" id="dashboard">Profile</a></h1>
-                <h1 align="right"><a href="faq.blade.php" title="FAQ" id="dashboard">FAQ</a></h1>
-                <h1 align="right"><a href="blog/blogindex.blade.php" title="Blog" id="dashboard">Blog</a></h1>
+                <h1 align="right"><a href="faq" title="FAQ" id="dashboard">FAQ</a></h1>
+                <h1 align="right"><a href="blog/blogindex" title="Blog" id="dashboard">Blog</a></h1>
             </aside>
         </nav>
         <nav class="top-left-nav">
