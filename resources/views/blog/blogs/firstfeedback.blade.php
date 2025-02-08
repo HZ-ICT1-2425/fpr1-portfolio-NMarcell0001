@@ -13,7 +13,7 @@
 
 <body>
 <h1 align="center"><span id="bigsign">
-                        Feedback to the Who am I questionnaire<span style="width: 10px;"></span></h1>
+        Feedback to the Who am I questionnaire<span style="width: 10px;"></span></span></h1>
 <h1 align="right"><a href="{{ route('blog') }}" title="Blog" id="dashboard">Go back to the Blog page</a></h1>
 
 <br>

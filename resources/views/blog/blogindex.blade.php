@@ -11,7 +11,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body bgcolor="#C9C0BD">
+<body>
 <h1 align="center"><span id="bigsign">
             N. Marcell's Blog Page!</span></h1>
 <nav class="top-right-nav">
@@ -27,19 +27,19 @@
             Study choice blog: <p id="smoltext" align="left"> First of all, I would definitely like to complete a
                 masters program which probably would either be an MBA or something that is related to IT. Second, I
                 would most likely...
-                <a href="blogs/studychoice.html" id="readmore">Read more</a>
+                <a href="blogs/studychoice" id="readmore">Read more</a>
             </p>
         </th>
         <th id="blogpage">SWOT Analysis blog:<p id="smoltext" align="left">I am rather precise, I could also say I
                 am responsible, I am always on time, also I am a very...
-                <a href="blogs/swot.html" id="readmore">Read more</a>
+                <a href="blogs/swot" id="readmore">Read more</a>
             </p>
         </th>
     </tr>
     <tr>
         <th id="blogpage">Programming Experience blog <p id="smoltext" align="left">A very basic level of python, as
                 the high school leaving exam requires it, plus, in the recent weeks/months...
-                <a href="blogs/progexp.html" id="readmore">Read more</a>
+                <a href="blogs/progexp" id="readmore">Read more</a>
             </p>
         </th>
         <th id="blogpage">First Feedback blog<p id="smoltext" align="left">Reading your motivation, nice to see that
@@ -51,7 +51,7 @@
     <tr>
         <th id="blogpage">My opinion on AI <p id="smoltext" align="left">Artifical intelligence, while percieved by
                 the Media as something extremely revolutionary, is actually...
-                <a href="blogs/ictarticle.html" id="readmore">Read more</a>
+                <a href="blogs/ictarticle" id="readmore">Read more</a>
             </p>
         </th>
     </tr>
