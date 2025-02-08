@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Marcell N.">
-    <meta name="description" content="PCO Website project for 2.5 ECs">
-    <title>Home Page</title>
-
-    {{-- Compiled assets --}}
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body>
-
-<section class="section">
+@extends('layout.main')
+@section('content')
     <div class="container">
         <nav class="top-right-nav">
             <aside>
@@ -68,22 +55,4 @@
             <img src="pictures/screenshot-3.png" style="width:30%;" alt="Another screenshot of the program">
         </h2>
     </div>
-</section>
-
-{{-- Footer --}}
-<footer class="footer">
-    <div class="container">
-        <div class="content is-small has-text-centered">
-            <footer align="center" id="ftr">Website made by Marcell Nemes |
-                Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a> | adapted by <a
-                    href="https://github.com/dwaard">BugSlayer</a>
-                <a href="https://opensource.org/licenses/MIT" class="link">
-                    <i class="fa fa-balance-scale" aria-hidden="true"></i> License: MIT
-                </a>
-            </footer>
-        </div>
-    </div>
-</footer>
-
-</body>
-</html>
+@endsection

@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Marcell N.">
-    <meta name="description" content="PCO Website project for 2.5 ECs">
-    <title>First feedback</title>
-
-    {{-- Compiled assets --}}
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-
-<body>
+@extends('layout.main')
+@section('content')
+    <div class="container">
 <h1 align="center"><span id="bigsign">
         Feedback to the Who am I questionnaire<span style="width: 10px;"></span></span></h1>
 <h1 align="right"><a href="{{ route('blog') }}" title="Blog" id="dashboard">Go back to the Blog page</a></h1>
@@ -80,7 +69,5 @@
         HZ's
         website so I guess my interests in this area are covered pleasantly, activity wise.</i></h2>
 <br>
-<footer align="center" id="ftr">Website made by Marcell Nemes</footer>
-</body>
-
-</html>
+    </div>
+@endsection

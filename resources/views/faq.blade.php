@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Marcell N.">
-    <meta name="description" content="PCO Website project for 2.5 ECs">
-    <title>FAQ</title>
-
-    {{-- Compiled assets --}}
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-
-<body>
+@extends('layout.main')
+@section('content')
+    <div class="container">
 <h1 align="center"><span id="bigsign">
-            N. Marcell's FAQ Page!</h1>
+            N. Marcell's FAQ Page!</span></h1>
 <nav class="top-right-nav">
     <h1 align="right"><a href="/" title="Home Page" id="dashboard">Home Page</a></h1>
     <h1 align="right"><a href="profile" title="My profile" id="dashboard">Profile</a></h1>
@@ -71,7 +60,5 @@
     <ul id="smoltext">1. It is possible at Kousteensedijk, but you have to request cards at the JRCZ
         service desk.</ul>
 </h2>
-<footer align="center" id="ftr">Website made by Marcell Nemes</footer>
-</body>
-
-</html>
+    </div>
+@endsection
