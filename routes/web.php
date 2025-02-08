@@ -5,6 +5,7 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\BlogController;
 
 // Home route (index page)
 Route::get('/', [IndexController::class, 'index'])->name('home');
@@ -17,3 +18,7 @@ Route::get('/faq', [FaqController::class, 'index'])->name('faq');
 
 //Dashboard route
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+//Blog route
+Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+

@@ -18,7 +18,7 @@
     <h1 align="right"><a href="/" title="Home Page" id="dashboard">Home Page</a></h1>
     <h1 align="right"><a href="profile" title="My profile" id="dashboard">Profile</a></h1>
     <h1 align="right"><a href="faq" title="FAQ" id="dashboard">FAQ</a></h1>
-    <h1 align="right"><a href="blog/blogindex" title="Blog" id="dashboard">Blog</a></h1>
+    <h1 align="right"><a href="blog" title="Blog" id="dashboard">Blog</a></h1>
 </nav>
 <br><br><br><br><br>
 <table>
