@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Marcell N.">
+    <meta name="description" content="PCO Website project for 2.5 ECs">
+    <title>Home Page</title>
 
     <title>HZ HBO-ICT</title>
 
@@ -11,7 +14,7 @@
 </head>
 <body>
 {{-- Navigation bar --}}
-<nav class="navbar is-primary  has-text-white" >
+<nav class="navbar is-primary  has-text-white">
     <div class="container">
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
@@ -44,65 +47,92 @@
 
 <section class="section">
     <div class="container">
-        <div class="columns">
+        <nav class="top-right-nav">
+            <aside>
+                <h1 align="right"><a href="dashboard.html" title="Dashboard" id="dashboard">Dashboard</a></h1>
+                <h1 align="right"><a href="profile.html" title="My profile" id="dashboard">Profile</a></h1>
+                <h1 align="right"><a href="faq.html" title="FAQ" id="dashboard">FAQ</a></h1>
+                <h1 align="right"><a href="blog/blogindex.html" title="Blog" id="dashboard">Blog</a></h1>
+            </aside>
+        </nav>
+        <nav class="top-left-nav">
+            <h1 align="left"><a href="https://github.com/HZ-HBO-ICT" title="ICT Github for HZ" id="leftmenu"
+                                target="_blank">ICT Github page for HZ</a></h1>
+            <h1 align="left"><a
+                    href="https://fs.myhz.nl/adfs/oauth2/authorize/?resource=urn%3AWebservice-hz_portal&state=6f967f3720afbdd9805cbd634675aaa8&scope=openid&response_type=code&approval_prompt=auto&redirect_uri=https%3A%2F%2Fportal.hz.nl%2Fauth%2Fadfs%2Fcallback&client_id=b25d3143-ffab-46db-96bd-fff258b69da3&client-request-id=45af508e-8c57-41a6-7300-00800100003a&pullStatus=0"
+                    title="Login website for HZ's portal" id="leftmenu" target="_blank"><img src="pictures/hz-logo.png"
+                                                                                             width="20px" height="25px"
+                                                                                             align="center"> Portal
+                    Login</a></h1>
+            <h1 align="left"><a
+                    href="https://glaze-donut-5a5.notion.site/PCO1en-Your-Showcase-Website-7bc8c340f66047d0b49b83e8dc44ba23"
+                    title="PCO Prep Assignment" id="leftmenu" target="_blank">Prep Assignment link</a></h1>
+            <h1 align="left"><a
+                    href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/CER-HZ-Bachelor-full-time-2023-2024-DEF-version-20240412.pdf?_gl=1*1us1txq*_up*MQ..&gclid=Cj0KCQjwiuC2BhDSARIsALOVfBKurbY7bDLmshx8x2BGn1gRz97T8jy3Tz_x_yvpk8ipMFH4tgeMWnEaAt2hEALw_wcB"
+                    title="ICT Github for HZ" id="leftmenu" target="_blank">HZ Course and exam regulations</a></h1>
+        </nav>
+        <h1 align="center"><span id="bigsign">
+            N. Marcell's Home Page!</h1>
+        <br><br><br><br><br>
+        <h1 align="left" id="basestyle"><b>Why I think this program suits me: </b></h1>
 
-            <div class="column is-8-desktop is-12-tablet">
-
-                <div class="content">
-                    <h1>Welcome to the HZ HBO-ICT template app.</h1>
-                    <p>
-                        Posuere porttitor natoque velit duis penatibus fermentum dignissim ut? Vel vel mi purus
-                        tempor nec conubia platea venenatis. Mauris pharetra auctor magnis, vehicula integer risus
-                        taciti gravida semper fames! Eu fermentum lorem accumsan litora. Consequat dapibus interdum
-                        primis lorem. Convallis integer mi suscipit tempor. Ad tincidunt placerat at. Sagittis
-                        pulvinar consectetur commodo, placerat varius sociosqu egestas felis! Curae; dictumst porta
-                        tempus. Nisi nec morbi netus euismod egestas proin sed tempor. Nam feugiat ante ante.
-                        Conubia vehicula tincidunt facilisis quisque risus senectus convallis. Eget at feugiat vel
-                        nisi. Tortor, facilisis neque elementum ultricies blandit amet orci dictumst eu mi molestie.
-                        Libero vulputate porta proin volutpat suspendisse aenean aenean facilisi ut primis!
-                        Venenatis elementum auctor neque urna et facilisis vulputate erat lorem habitasse libero!
-                        Risus ornare quam rutrum praesent blandit congue aliquet mauris.
-                    </p>
-                    <p>
-                        Elementum orci eget vel adipiscing tempor malesuada? Sollicitudin euismod nunc feugiat
-                        accumsan accumsan condimentum nulla pellentesque sagittis habitasse suspendisse praesent?
-                        Lectus proin justo vulputate tristique duis metus, est pellentesque blandit quam pharetra.
-                        Maecenas tincidunt litora mauris mollis ornare dictum nec placerat lectus massa lobortis
-                        auctor. Hac feugiat dolor, ac ridiculus mi adipiscing aptent elementum suspendisse augue
-                        rutrum! Habitasse a consequat ornare dictumst integer dis porta.
-                    </p>
-                    <p>
-                        Blandit mollis felis gravida sem ad venenatis ut a lacus! Magna odio netus, torquent rhoncus
-                        fames velit. Adipiscing libero, class cursus ipsum penatibus enim mollis netus. Sociis
-                        luctus eros sapien platea parturient fringilla. Senectus purus tincidunt laoreet purus
-                        praesent. Accumsan pulvinar tincidunt gravida malesuada senectus proin, elit cubilia
-                        lobortis quisque tellus? Torquent dis natoque sapien natoque sagittis conubia pulvinar risus
-                        elementum hac adipiscing arcu. Sem nisl fusce phasellus adipiscing pretium eget hendrerit
-                        proin non. Vestibulum lacus magna, commodo volutpat.
-                    </p>
-                    <p>
-                        Vivamus ridiculus amet arcu. Magnis venenatis vehicula venenatis molestie molestie proin sed
-                        blandit, inceptos volutpat. Auctor auctor massa sodales ipsum. Congue est quisque porta?
-                        Porta phasellus sem torquent ad feugiat sollicitudin nisi tempor tortor habitasse. Eros
-                        condimentum enim blandit pulvinar. Justo aenean, taciti curae; diam volutpat cubilia ante
-                        vestibulum. Augue penatibus phasellus inceptos tortor convallis ridiculus at ad. Nisl
-                        curabitur vel gravida, montes sit velit pellentesque. Sem, dapibus maecenas urna lectus
-                        mauris quisque nibh accumsan amet curabitur egestas dolor. Sagittis montes magnis quam
-                        fringilla accumsan bibendum. Nisl, a laoreet himenaeos sapien lorem quisque taciti lacus
-                        elit mauris. Mollis eleifend montes commodo? Accumsan nullam venenatis malesuada netus metus
-                        sociosqu magnis velit. Rhoncus lacus tempus praesent fermentum netus ullamcorper dolor
-                        integer nulla.
-                    </p>
-                    <p>
-                        Habitasse suspendisse egestas vestibulum pellentesque per leo enim metus donec ad. Hac metus
-                        convallis nibh eget, parturient dis elementum posuere. Felis, ultricies fusce est cubilia
-                        facilisis odio id velit dapibus suspendisse. Erat praesent nullam aliquam. Rutrum commodo
-                        eget malesuada per montes, curae; senectus convallis sociis per. Risus mattis justo vivamus
-                        lorem bibendum aenean eleifend facilisi, suscipit consectetur libero litora. Interdum?
-                    </p>
-                </div>
-            </div>
-        </div>
+        <h2 id="longfont">
+            <ul>
+                <li>
+                    <p><u style="text-underline-offset: 8px; font-size:small;">I enjoy problem solving,
+                            especially in python which I learnt for about 3-4 years in high school (Thoroughly enjoyed
+                            it)</u></p>
+                </li>
+                <li>
+                    <p><u style="text-underline-offset: 8px; font-size:small;">I like working with
+                            <a href="https://en.wikipedia.org/wiki/Data" target="_blank">data</a>, for example in HS we
+                            basically made automated programs that extracted data from
+                            <a href="https://en.wikipedia.org/wiki/Text_file" target="_blank">txt files</a> and did
+                            stuff
+                            with them</u></p>
+                </li>
+                <li>
+                    <p><u style="text-underline-offset: 8px; font-size: small;">
+                            I have always completed my assignments and 'homework' on time and with quality while also
+                            helping
+                            friends/classmates that struggled
+                        </u></p>
+                </li>
+            </ul>
+        </h2>
+        <p id="mediumtext"> - I have the motivation to learn new stuff</p>
+        <p id="mediumtext"> - I will be glad of feedback and implement (most) in my code</p>
+        <h1 align="left" <span id="basestyle">
+        </span><b>Some snippets of the aforementioned codes:</b></h1>
+        <h2 id="longfont">
+            <br>
+            <p><u style="text-underline-offset: 8px; font-size:small;">Another reason is that when I have an idea I try
+                    and
+                    code it
+                    which also involves a lot of learning because of new concepts. A great example is a small program I
+                    made
+                    this summer
+                    that calculates the time it will take you to go from point A to point B on a hypothetical rail line,
+                    plus, it also
+                    informs you how many stops you will make along the way. Point A and Point B are given by you and the
+                    program is
+                    pretty flexible since only the distances between each station are given. (AKA there isn't a huge
+                    list
+                    that contains every possible distance from all the stations) (Yes, I am a train nerd as well) The
+                    key
+                    takeaway from this program I made
+                    which took about 5-6 workhours is that I was introduced to a new library and had to solve multiple
+                    problems that
+                    required solutions I did not have the knowledge of. Overall it was an awesome experience as the
+                    program
+                    functions
+                    as intended and it doesn't have any bugs. (A huge motivation was the topic of the program which made
+                    it
+                    rather interesting to me)
+                </u></p>
+            <img src="pictures/screenshot-2.png" width="45%"><img src="pictures/screenshot-3.png" style="width:30%;">
+        </h2>
+        <footer align="center" id="ftr">Website made by Marcell Nemes</footer>
     </div>
 </section>
 
@@ -128,7 +158,8 @@
         </div>
 
         <div class="content is-small has-text-centered">
-            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a> | adapted by <a href="https://github.com/dwaard">BugSlayer</a></p>
+            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a> | adapted by <a
+                    href="https://github.com/dwaard">BugSlayer</a></p>
             <p>PROJECT FOOTER HERE</p>
         </div>
     </div>
