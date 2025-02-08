@@ -9,6 +9,10 @@
     padding: 3px;
 }
 
+.body {
+    background-color: deepskyblue;
+}
+
 #longfont {
     display: inline;
     font-weight: normal;
