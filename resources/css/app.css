@@ -1,3 +1,24 @@
+/* General page styling */
+body {
+    background-color: #C9C0BD;
+    padding-bottom: 1%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Header sign */
+#bigsign {
+    background-color: #008b8b;
+    color: greenyellow;
+    border-style: inset;
+    border-width: 21px;
+    font-family: fantasy;
+    padding-right: 13px;
+    padding: 1.85%;
+    display: inline-block;
+    font-size: 2.25rem;
+    margin-bottom: 5%;
+}
+/* Content styling for "basestyle" and "longfont" */
 #basestyle {
     background-color: deepskyblue;
     color: gold;
@@ -6,125 +27,110 @@
     border-radius: 10px;
     font-size: 20px;
     display: inline-block;
-    padding: 3px;
-}
-
-body {
-    background-color: deepskyblue;
-    padding-bottom: 1%;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 #longfont {
     display: inline;
     font-weight: normal;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-    sans-serif;
     font-size: 18px;
     text-underline-offset: 8px;
 }
 
+/* Small and medium text sizes */
+#smoltext {
+    font-size: small;
+}
 
-.top-right-nav, .top-left-nav {
+#mediumtext {
+    font-size: medium;
+}
+
+/* Footer */
+#ftr {
+    background-color: rgb(48, 126, 199);
+    color: yellow;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styling for top-right and top-left nav */
+.top-right-nav {
     position: absolute;
     top: 0;
     right: 0;
     padding: 10px;
+    text-align: right;
 }
 
+.top-left-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Nav items styling */
 #dashboard {
     font-weight: normal;
     font-size: 18px;
     color: white;
-    display: inline-block;
-    border-width: 50px;
     padding: 10px;
     background-color: black;
     border-radius: 20px;
     text-decoration: none;
     margin-left: 10px;
+    display: inline-block;
 }
 
 #leftmenu {
     font-weight: normal;
     font-size: 18px;
-    color: white;
-    border-width: 50px;
+    color: greenyellow;
     padding: 10px;
-    background-color: black;
+    background-color: dodgerblue;
     border-radius: 20px;
+    text-decoration: none;
     margin-left: 10px;
     display: inline-block;
 }
-
-#tablepadding {
-    padding: 3.5px;
+#dashboard:hover, #leftmenu:hover {
+    background-color: red;
 }
 
-#bigsign {
-    background-color: #008b8b;
-    color: greenyellow;
-    border-style: inset;
-    border-width: 20px;
-    font-family: fantasy;
-    padding-right: 13px;
-    display: inline-block;
-}
-
+/* Table borders and styling */
 .tdborder td {
     border: solid 5px rgb(48, 126, 199);
     color: greenyellow;
     background-color: rgb(48, 126, 199);
     text-align: center;
     font-weight: bold;
-
 }
 
-.dashentries td {
-    border: solid 2px red;
-    background-color: rgb(48, 126, 199);
-    color: aqua;
-    text-align: center;
-    font-weight: bold
-}
-
-.underwaydashentries td {
-    border: solid 2px yellow;
-    background-color: rgb(48, 126, 199);
-    color: aqua;
-    text-align: center;
-    font-weight: bold
-}
-
-.completeddashentries td {
+.dashentries td, .underwaydashentries td, .completeddashentries td {
     border: solid 2px rgb(19, 255, 0);
     background-color: rgb(48, 126, 199);
     color: aqua;
     text-align: center;
-    font-weight: bold
+    font-weight: bold;
 }
 
-.credits td {
-    border: dotted 3px green;
-    background-color: red;
-    color: lightyellow;
-    text-align: center;
-    font-weight: bold
-}
-
-#smoltext {
-    font-size: small
-}
-
-#mediumtext {
-    font-size: medium
-}
-
+/* Button and action items */
 #buttonthingy {
     color: darkgreen;
     border: dotted 5px brown;
     float: left;
 }
 
+/* Blog page styling */
 #blogpage {
     border: double cadetblue 5px;
     font-size: 40px;
@@ -145,21 +151,28 @@ body {
     color: darkgreen;
 }
 
-#ftr {
-    background-color: rgb(48, 126, 199);
-    color: yellow;
-    font-style: oblique;
-    font-weight: bold;
-    border-radius: 50px;
+/* Footer text */
+.content.is-small {
+    margin-top: 20px;
+    text-align: center;
 }
 
-#ftr {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(48, 126, 199);
-    color: yellow;
-    font-style: oblique;
-    font-weight: bold;
-    border-radius: 10px;
+/* Additional adjustments for section content */
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-content ul {
+    padding-left: 20px;
+}
+
+.section-content h1, .section-content h2 {
+    margin-bottom: 10px;
+}
+
+.section-content img {
+    margin-top: 10px;
+    max-width: 100%;
 }
