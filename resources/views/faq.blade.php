@@ -3,7 +3,8 @@
     <div class="container">
         <h1 align="center"><span id="bigsign">
             N. Marcell's FAQ Page!</span></h1>
-        </span><b>1. How do you print on your laptop?</b></h1>
+        <h1 align="left"><span id="basestyle">
+        <b>1. How do you print on your laptop?</b></span></h1>
         <h2 id="longfont">
             <ul id="smoltext">
                 1. Open <a href="https://hz.mynetpay.nl/" target="_blank">
