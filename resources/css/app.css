@@ -202,3 +202,9 @@ body {
     margin-top: 10px;
     max-width: 100%;
 }
+
+.active {
+    font-weight: bold;
+    color: cyan; /* Example: Change the color */
+}
+

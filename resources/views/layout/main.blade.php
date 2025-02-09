@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>PCO Portfolio</title>
 
     {{-- Compiled assets --}}
@@ -12,11 +11,21 @@
 <body>
 <!-- Navigation bar -->
 <nav class="top-right-nav">
-    <h1 align="right"><a href="/" title="Home Page" id="dashboard">Home Page</a></h1>
-    <h1 align="right"><a href="profile" title="My profile" id="dashboard">Profile</a></h1>
-    <h1 align="right"><a href="dashboard" title="Dashboard" id="dashboard">Dashboard</a></h1>
-    <h1 align="right"><a href="faq" title="FAQ" id="dashboard">FAQ</a></h1>
-    <h1 align="right"><a href="blog" title="Blog" id="dashboard">Blog</a></h1>
+    <h1 align="right">
+        <a href="{{ route('home') }}" title="Home Page" id="dashboard" class="{{ Request::is('/') ? 'active' : '' }}">Home Page</a>
+    </h1>
+    <h1 align="right">
+        <a href="{{ route('profile') }}" title="My profile" id="dashboard" class="{{ Request::is('profile') ? 'active' : '' }}">Profile</a>
+    </h1>
+    <h1 align="right">
+        <a href="{{ route('dashboard') }}" title="Dashboard" id="dashboard" class="{{ Request::is('dashboard') ? 'active' : '' }}">Dashboard</a>
+    </h1>
+    <h1 align="right">
+        <a href="{{ route('faq') }}" title="FAQ" id="dashboard" class="{{ Request::is('faq') ? 'active' : '' }}">FAQ</a>
+    </h1>
+    <h1 align="right">
+        <a href="{{ route('blog') }}" title="Blog" id="dashboard" class="{{ Request::is('blog') || Request::is('blog/*') ? 'active' : '' }}">Blog</a>
+    </h1>
 </nav>
 
 <!-- Main Content -->

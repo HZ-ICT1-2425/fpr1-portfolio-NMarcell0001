@@ -3,7 +3,7 @@
     <div class="container">
         <h1 align="center"><span id="bigsign">
         Study choice blog<span style="width: 10px;"></span></span></h1>
-        <h1 align="right"><a href="{{ route('blog') }}" title="Blog" id="dashboard">Go back to the Blog page</a></h1>
+        <h1 align="left"><a href="{{ route('blog') }}" title="Blog" id="dashboard">Go back to the Blog page</a></h1>
         <br>
         <h2 id="blogtext" align="center">First of all, I would definitely like to complete a masters program which
             probably
