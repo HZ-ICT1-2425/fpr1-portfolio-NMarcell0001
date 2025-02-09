@@ -3,12 +3,6 @@
     <div class="container">
         <h1 align="center"><span id="bigsign">
             N. Marcell's Blog Page!</span></h1>
-        <nav class="top-right-nav">
-            <h1 align="right"><a href="{{ route('home') }}" title="Home Page" id="dashboard">Home Page</a></h1>
-            <h1 align="right"><a href="{{ route('profile') }}" title="My profile" id="dashboard">Profile</a></h1>
-            <h1 align="right"><a href="{{ route('faq') }}" title="FAQ" id="dashboard">FAQ</a></h1>
-            <h1 align="right"><a href="{{ route('dashboard') }}" title="Dashboard" id="dashboard">Dashboard</a></h1>
-        </nav>
         <br><br><br><br><br>
         <table>
             <tr>

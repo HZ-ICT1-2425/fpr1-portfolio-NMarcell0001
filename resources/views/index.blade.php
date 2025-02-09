@@ -1,20 +1,14 @@
 @extends('layout.main')
 @section('content')
     <div class="container">
-        <nav class="top-right-nav">
-            <aside>
-                <h1 align="right"><a href="dashboard" title="Dashboard" id="dashboard">Dashboard</a></h1>
-                <h1 align="right"><a href="profile" title="My profile" id="dashboard">Profile</a></h1>
-                <h1 align="right"><a href="faq" title="FAQ" id="dashboard">FAQ</a></h1>
-                <h1 align="right"><a href="blog" title="Blog" id="dashboard">Blog</a></h1>
-            </aside>
-        </nav>
         <nav class="top-left-nav">
             <h1 align="left"><a href="https://github.com/HZ-HBO-ICT" title="ICT Github for HZ" id="leftmenu"
                                 target="_blank">ICT Github page for HZ</a></h1>
             <h1 align="left"><a
                     href="https://fs.myhz.nl/adfs/oauth2/authorize/?resource=urn%3AWebservice-hz_portal&state=6f967f3720afbdd9805cbd634675aaa8&scope=openid&response_type=code&approval_prompt=auto&redirect_uri=https%3A%2F%2Fportal.hz.nl%2Fauth%2Fadfs%2Fcallback&client_id=b25d3143-ffab-46db-96bd-fff258b69da3&client-request-id=45af508e-8c57-41a6-7300-00800100003a&pullStatus=0"
-                    title="Login website for HZ's portal" id="leftmenu" target="_blank"><img src="pictures/hz-logo.png" width="20px" height="25px" align="center"> Portal
+                    title="Login website for HZ's portal" id="leftmenu" target="_blank"><img src="pictures/hz-logo.png"
+                                                                                             width="20px" height="25px"
+                                                                                             align="center"> Portal
                     Login</a></h1>
             <h1 align="left"><a
                     href="https://glaze-donut-5a5.notion.site/PCO1en-Your-Showcase-Website-7bc8c340f66047d0b49b83e8dc44ba23"
@@ -30,16 +24,20 @@
         <h2 id="longfont">
             <ul>
                 <li>
-                    <p><u class="underline-small">I enjoy problem solving, especially in python which I learnt for about 3-4 years in high school (Thoroughly enjoyed it)</u></p>
+                    <p><u class="underline-small">I enjoy problem solving, especially in python which I learnt for about
+                            3-4 years in high school (Thoroughly enjoyed it)</u></p>
                 </li>
                 <li>
                     <p><u class="underline-small">I like working with
-                            <a href="https://en.wikipedia.org/wiki/Data" target="_blank">data</a>, for example in HS we basically made automated programs that extracted data from
-                            <a href="https://en.wikipedia.org/wiki/Text_file" target="_blank">txt files</a> and did stuff with them</u></p>
+                            <a href="https://en.wikipedia.org/wiki/Data" target="_blank">data</a>, for example in HS we
+                            basically made automated programs that extracted data from
+                            <a href="https://en.wikipedia.org/wiki/Text_file" target="_blank">txt files</a> and did
+                            stuff with them</u></p>
                 </li>
                 <li>
                     <p><u class="underline-small">
-                            I have always completed my assignments and 'homework' on time and with quality while also helping friends/classmates that struggled
+                            I have always completed my assignments and 'homework' on time and with quality while also
+                            helping friends/classmates that struggled
                         </u></p>
                 </li>
             </ul>
@@ -49,7 +47,17 @@
         </p>
         <h1 align="left"><span id="basestyle"><b>Some snippets of the aforementioned codes:</b></span></h1>
         <h2 id="longfont">
-            <p><u class="underline-small" style="line-height: 1.45">Another reason is that when I have an idea I try and code it which also involves a lot of learning because of new concepts. A great example is a small program I made this summer that calculates the time it will take you to go from point A to point B on a hypothetical rail line, plus, it also informs you how many stops you will make along the way. Point A and Point B are given by you and the program is pretty flexible since only the distances between each station are given. (AKA there isn't a huge list that contains every possible distance from all the stations) (Yes, I am a train nerd as well) The key takeaway from this program I made which took about 5-6 workhours is that I was introduced to a new library and had to solve multiple problems that required solutions I did not have the knowledge of. Overall it was an awesome experience as the program functions as intended and it doesn't have any bugs. (A huge motivation was the topic of the program which made it rather interesting to me)
+            <p><u class="underline-small" style="line-height: 1.45">Another reason is that when I have an idea I try and
+                    code it which also involves a lot of learning because of new concepts. A great example is a small
+                    program I made this summer that calculates the time it will take you to go from point A to point B
+                    on a hypothetical rail line, plus, it also informs you how many stops you will make along the way.
+                    Point A and Point B are given by you and the program is pretty flexible since only the distances
+                    between each station are given. (AKA there isn't a huge list that contains every possible distance
+                    from all the stations) (Yes, I am a train nerd as well) The key takeaway from this program I made
+                    which took about 5-6 workhours is that I was introduced to a new library and had to solve multiple
+                    problems that required solutions I did not have the knowledge of. Overall it was an awesome
+                    experience as the program functions as intended and it doesn't have any bugs. (A huge motivation was
+                    the topic of the program which made it rather interesting to me)
                 </u></p>
             <img src="pictures/screenshot-2.png" width="45%" alt="Screenshot of my program output">
             <img src="pictures/screenshot-3.png" style="width:30%;" alt="Another screenshot of the program">
