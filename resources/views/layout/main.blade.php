@@ -12,7 +12,7 @@
 <!-- Navigation bar -->
 <nav class="top-right-nav">
     <h1 align="right">
-        <a href="{{ route('home') }}" title="Home Page" id="dashboard" class="{{ Request::is('/') ? 'active' : '' }}">Home Page</a>
+        <a href="{{ route('home') }}" class="active" title="Home Page" id="dashboard">Home Page</a>
     </h1>
     <h1 align="right">
         <a href="{{ route('profile') }}" title="My profile" id="dashboard" class="{{ Request::is('profile') ? 'active' : '' }}">Profile</a>
@@ -24,9 +24,11 @@
         <a href="{{ route('faq') }}" title="FAQ" id="dashboard" class="{{ Request::is('faq') ? 'active' : '' }}">FAQ</a>
     </h1>
     <h1 align="right">
-        <a href="{{ route('blog') }}" title="Blog" id="dashboard" class="{{ Request::is('blog') || Request::is('blog/*') ? 'active' : '' }}">Blog</a>
+        <a href="{{ route('blog') }}" title="Blog" id="dashboard" class="{{ Request::is('blog') || Request::is('posts/*') ? 'active' : '' }}">Blog</a>
     </h1>
 </nav>
+
+
 
 <!-- Main Content -->
 <div class="container">

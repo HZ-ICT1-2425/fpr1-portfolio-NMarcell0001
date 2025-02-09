@@ -10,21 +10,20 @@ use App\Http\Controllers\BlogController;
 
 use App\Http\Controllers\PostController;
 
-// Home route (index page)
+// Home route
 Route::get('/', [IndexController::class, 'index'])->name('home');
 
 // Profile route
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
+// Dashboard route
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
 // FAQ route
 Route::get('/faq', [FaqController::class, 'index'])->name('faq');
 
-//Dashboard route
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-
-//Blog route
+// Blog route (listing all posts)
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 
-// Blog post route (dynamic slug)
+// Post route (individual post)
 Route::get('/posts/{slug}', [PostController::class, 'show'])->name('post.show');
-
