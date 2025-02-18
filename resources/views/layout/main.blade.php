@@ -21,7 +21,7 @@
         <a href="{{ route('dashboard') }}" title="Dashboard" id="dashboard" class="{{ Request::is('dashboard') ? 'active' : '' }}">Dashboard</a>
     </h1>
     <h1 align="right">
-        <a href="{{ route('faq') }}" title="FAQ" id="dashboard" class="{{ Request::is('faq') ? 'active' : '' }}">FAQ</a>
+        <a href="{{ route('faq.index') }}" title="FAQ" id="dashboard" class="{{ Request::is('faq') ? 'active' : '' }}">FAQ</a>
     </h1>
     <h1 align="right">
         <a href="{{ route('blog') }}" title="Blog" id="dashboard" class="{{ Request::is('blog') || Request::is('posts/*') ? 'active' : '' }}">Blog</a>
