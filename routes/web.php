@@ -5,10 +5,7 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\DashboardController;
-
 use App\Http\Controllers\BlogController;
-
-use App\Http\Controllers\PostController;
 
 // Home route
 Route::get('/', [IndexController::class, 'index'])->name('home');
@@ -27,8 +24,12 @@ Route::get('/faq/{faq}/edit', [FaqController::class, 'edit'])->name('faq.edit');
 Route::put('/faq/{faq}', [FaqController::class, 'update'])->name('faq.update'); // Update FAQ
 Route::delete('/faq/{faq}', [FaqController::class, 'destroy'])->name('faq.destroy'); // Delete FAQ
 
-// Blog route (listing all posts)
-Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+// Blog routes
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index'); // Show all blogs
+Route::get('/blog/create', [BlogController::class, 'create'])->name('blog.create'); // Create new blog page
+Route::post('/blog', [BlogController::class, 'store'])->name('blog.store'); // Store new blog
+Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show'); // Show individual blog
+Route::get('/blog/{slug}/edit', [BlogController::class, 'edit'])->name('blog.edit'); // Edit blog page
+Route::put('/blog/{slug}', [BlogController::class, 'update'])->name('blog.update'); // Update blog
+Route::delete('/blog/{slug}', [BlogController::class, 'destroy'])->name('blog.destroy'); // Delete blog
 
-// Post route (individual post)
-Route::get('/posts/{slug}', [PostController::class, 'show'])->name('post.show');

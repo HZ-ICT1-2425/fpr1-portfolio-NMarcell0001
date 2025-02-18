@@ -24,7 +24,7 @@
         <a href="{{ route('faq.index') }}" title="FAQ" id="dashboard" class="{{ Request::is('faq') ? 'active' : '' }}">FAQ</a>
     </h1>
     <h1 align="right">
-        <a href="{{ route('blog') }}" title="Blog" id="dashboard" class="{{ Request::is('blog') || Request::is('posts/*') ? 'active' : '' }}">Blog</a>
+        <a href="{{ route('blog.index') }}" title="Blog" id="dashboard" class="{{ Request::is('blog') || Request::is('posts/*') ? 'active' : '' }}">Blog</a>
     </h1>
 </nav>
 
