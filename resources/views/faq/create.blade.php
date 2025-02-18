@@ -17,7 +17,7 @@
                 <textarea id="answer" name="answer" class="form-control" rows="10" required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary" id = 'basestyle'><b>Save FAQ</b></button>
+            <button type="submit" class="btn btn-primary" id = 'faq-actions'><b>Save FAQ</b></button>
         </form>
     </div>
 @endsection

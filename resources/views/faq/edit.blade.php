@@ -6,7 +6,7 @@
 
         <form action="{{ route('faq.update', $faq->id) }}" method="POST">
             @csrf
-            @method('PUT') <!-- This is for PUT method, used for updating the resource -->
+            @method('PUT')
             <div class="form-group">
                 <label for="question" id ='basestyle'><b>Question:</b></label>
                 <input type="text" id="question" name="question" class="form-control" value="{{ old('question', $faq->question) }}" required>
@@ -17,7 +17,7 @@
                 <textarea id="answer" name="answer" class="form-control" rows="5" required>{{ old('answer', $faq->answer) }}</textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary" id = 'basestyle'>Update FAQ</button>
+            <button type="submit" class="btn btn-primary" id = 'faq-actions'>Update FAQ</button>
         </form>
     </div>
 @endsection
