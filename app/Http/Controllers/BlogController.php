@@ -32,7 +32,7 @@ class BlogController extends Controller
 
         Blog::create([
             'title' => $request->title,
-            'content' => $request->content,
+            'content' => $request->content ?: '',
             'slug' => $slug,
         ]);
 
@@ -41,9 +41,16 @@ class BlogController extends Controller
 
     public function show($slug)
     {
+        $viewPath = "blog.blogs.$slug";
+
+        if (view()->exists($viewPath)) {
+            return view($viewPath);
+        }
+
         $blog = Blog::where('slug', $slug)->firstOrFail();
-        return view('blog.blogs.' . $slug, compact('blog'));
+        return view('blog.blogs.show', compact('blog'));
     }
+
 
     public function edit($slug)
     {

@@ -2,8 +2,8 @@
 @section('content')
     <div class="container">
         <h1 align="center"><span id="bigsign">
-        SWOT Analysis blog<span style="width: 10px;"></span></h1>
-        <h1 align="left"><a href="{{ route('blog') }}" title="Blog" id="dashboard">Go back to the Blog page</a></h1>
+                <span style="width: 10px;">SWOT Analysis blog</span></span></h1>
+        <h1 align="left"><a href="{{ route('blog.index') }}" title="Blog" id="dashboard">Go back to the Blog page</a></h1>
         <br>
         <h2 id="blogtext" align="center">Strengths: I am rather precise, I could also say I am responsible, I am always
             on

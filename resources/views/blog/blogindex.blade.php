@@ -53,18 +53,16 @@
             <table>
                 <tr>
                     <th id="blogpage">
-                        {{ $blog->title }}:
+                        {{ $blog->title }}
                         <p id="smoltext" align="left">
                             {{ Str::limit($blog->content, 100) }}
-                            <a href="{{ route('post.show', $blog->slug) }}" id="readmore">Read more</a>
+                            <a href="{{ route('blog.show', $blog->slug) }}" id="readmore">Read more</a>
                         </p>
                     </th>
                     <th id="blogpage">
-                        <!-- Edit Button -->
                         <a href="{{ route('blog.edit', $blog->slug) }}" class="btn btn-warning btn-sm"
                            id="blog-actions">Edit</a>
 
-                        <!-- Delete Button -->
                         <form action="{{ route('blog.destroy', $blog->slug) }}" method="POST"
                               style="display:inline-block;">
                             @csrf

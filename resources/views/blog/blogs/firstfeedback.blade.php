@@ -3,7 +3,7 @@
     <div class="container">
         <h1 align="center"><span id="bigsign">
         Feedback to the Who am I questionnaire<span style="width: 10px;"></span></span></h1>
-        <h1 align="left"><a href="{{ route('blog') }}" title="Blog" id="dashboard">Go back to the Blog page</a></h1>
+        <h1 align="left"><a href="{{ route('blog.index') }}" title="Blog" id="dashboard">Go back to the Blog page</a></h1>
         <br>
         <h1 id="blogtext" align="center"><b>Teacher's feedback:</b></h1>
         <h2 id="blogtext" align="center"><i>Reading your motivation, nice to see that you are interested in a master
