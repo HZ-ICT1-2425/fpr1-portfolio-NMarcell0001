@@ -55,7 +55,7 @@
                     <th id="blogpage">
                         {{ $blog->title }}
                         <p id="smoltext" align="left">
-                            {{ Str::limit($blog->content, 100) }}
+                            {{ Str::limit($blog->content, 50)}}
                             <a href="{{ route('blog.show', $blog->slug) }}" id="readmore">Read more</a>
                         </p>
                     </th>

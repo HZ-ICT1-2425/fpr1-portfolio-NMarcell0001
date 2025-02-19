@@ -68,8 +68,8 @@ class BlogController extends Controller
         $blog = Blog::where('slug', $slug)->firstOrFail();
 
         $blog->update([
-            'title' => $request->title,
-            'content' => $request->content,
+            'title' => $request->get("title"),
+            'content' => $request->get("content"),
         ]);
 
         return redirect()->route('blog.index')->with('success', 'Blog updated successfully!');
