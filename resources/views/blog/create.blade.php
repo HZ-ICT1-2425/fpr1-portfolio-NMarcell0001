@@ -14,11 +14,12 @@
             <div class="form-group">
                 <label for="slug" id="blog-actions">Slug</label>
                 <input type="text" class="form-control" name="slug" id="slug">
+                <small class="form-text text-muted">Leave blank to auto-generate slug based on the title</small>
             </div>
 
             <div class="form-group">
                 <label for="content" id="blog-actions">Content</label>
-                <textarea class="form-control" name="content" id="content" rows="5" required></textarea>
+                <textarea class="form-control" name="content" id="content" rows="5"></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary" id="blog-actions">Create Post</button>

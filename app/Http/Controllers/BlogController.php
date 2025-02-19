@@ -32,7 +32,7 @@ class BlogController extends Controller
 
         Blog::create([
             'title' => $request->title,
-            'content' => $request->content ?: '',
+            'content' => $request->content,
             'slug' => $slug,
         ]);
 
