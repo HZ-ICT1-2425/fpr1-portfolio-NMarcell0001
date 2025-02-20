@@ -4,7 +4,7 @@
     <div class="container">
         <h1>Edit FAQ</h1>
 
-        <form action="{{ route('faq.update', $faq->id) }}" method="POST">
+        <form action="{{ route('faq.update', $faq) }}" method="POST">
             @csrf
             @method('PUT')
             <div class="form-group">
