@@ -10,7 +10,6 @@ class FaqController extends Controller
     public function index()
     {
         $faqs = Faq::all();
-
         return view('faq.index', compact('faqs'));
     }
 
@@ -47,8 +46,8 @@ class FaqController extends Controller
         ]);
 
         $faq->update([
-            'question' => $request->question,
-            'answer' => $request->answer,
+            'question' => $request->get("question"),
+            'answer' => $request->get("answer"),
         ]);
 
         return redirect()->route('faq.index')->with('success', 'FAQ updated successfully!');
@@ -57,7 +56,11 @@ class FaqController extends Controller
     public function destroy(Faq $faq)
     {
         $faq->delete();
-
         return redirect()->route('faq.index')->with('success', 'FAQ deleted successfully!');
+    }
+
+    public function show(Faq $faq)
+    {
+        return view('faq.show', compact('faq'));
     }
 }
