@@ -31,8 +31,8 @@ class BlogController extends Controller
         $slug = Blog::where('slug', $slug)->exists() ? $slug . '-' . Str::random(5) : $slug;
 
         Blog::create([
-            'title' => $request->title,
-            'content' => $request->content,
+            'title' => $request->get("title"),
+            'content' => $request->get("content"),
             'slug' => $slug,
         ]);
 
