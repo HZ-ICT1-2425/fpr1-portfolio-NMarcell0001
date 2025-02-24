@@ -10,7 +10,13 @@ class Course extends Model
     use HasFactory;
 
     protected $fillable = [
-        'designation', 'name', 'ec_amount', 'project', 'timing',
-        'status', 'grade_received', 'overall_ec', 'passed_at'
+        'cu_code', 'course_name', 'credits', 'passed_at', 'created_at', 'updated_at', 'weighing_factor',
+        'lowest_passing_grade',
+        'best_grade', 'exam_name'
     ];
+
+    public function tests()
+    {
+        return $this->hasMany(Test::class);
+    }
 }

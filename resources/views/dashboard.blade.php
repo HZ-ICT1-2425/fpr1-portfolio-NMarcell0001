@@ -12,26 +12,26 @@
                     <td>Course designation</td>
                     <td>Course name</td>
                     <td>Course EC amount</td>
-                    <td>Course project</td>
+                    <td>Course passed at</td>
                     <td>Course timing</td>
                     <td>Course status</td>
-                    <td>Course grade received</td>
-                    <td>Overall EC</td>
+                    <td>Exam's name</td>
+                    <td>Received grade (best)</td>
                 </tr>
 
                 @foreach ($courses as $course)
                     <tr class="{{
-    $course->status == 'Completed' ? 'completeddashentries' :
-    ($course->status == 'Underway' ? 'underwaydashentries' : 'dashentries')
+    !empty($course->passed_at) ? 'completeddashentries' :
+    ($course->passed_at == '' ? 'dashentries' : 'dashentries')
 }}">
-                        <td>{{ $course->designation }}</td>
-                        <td>{{ $course->name }}</td>
-                        <td>{{ $course->ec_amount }} EC</td>
-                        <td>{{ $course->project }}</td>
-                        <td>{{ $course->timing }}</td>
-                        <td>{{ $course->status }}</td>
-                        <td>{{ $course->grade_received ?? '--' }}</td>
-                        <td>{{ $course->overall_ec ?? '-/-' }}</td>
+                        <td>{{ $course->cu_code }}</td>
+                        <td>{{ $course->course_name }}</td>
+                        <td>{{ $course->credits }} EC</td>
+                        <td>{{ $course->passed_at }}</td>
+                        <td>{{ $course->created_at }}</td>
+                        <td>{{ $course->updated_at }}</td>
+                        <td>{{ $course->exam_name}}</td>
+                        <td>{{ $course->best_grade}}</td>
                     </tr>
                 @endforeach
             </table>
