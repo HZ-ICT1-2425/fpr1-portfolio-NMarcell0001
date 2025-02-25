@@ -6,7 +6,6 @@
         <br><br><br><br><br>
         <a href="{{ route('blog.create') }}" class="btn btn-primary mb-3" id='blog-actions'><b>Create New Blog</b></a>
 
-        <!-- Displaying Blog Posts -->
         @foreach($blogs as $blog)
             <table>
                 <tr>

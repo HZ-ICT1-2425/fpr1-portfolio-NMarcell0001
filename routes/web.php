@@ -7,17 +7,14 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\BlogController;
 
-// Basic Routes
 Route::get('/', [IndexController::class, 'index'])->name('home');
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-// FAQ Routes (CRUD)
 Route::resource('faq', FaqController::class)->except(['edit', 'update']);
 Route::get('faq/{faq}/edit', [FaqController::class, 'edit'])->name('faq.edit');
 Route::put('faq/{faq}', [FaqController::class, 'update'])->name('faq.update');
 
-// Blog Routes (CRUD)
 Route::resource('blog', BlogController::class)->except(['edit', 'update', 'show']);
 Route::get('blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 Route::get('blog/{slug}/edit', [BlogController::class, 'edit'])->name('blog.edit');

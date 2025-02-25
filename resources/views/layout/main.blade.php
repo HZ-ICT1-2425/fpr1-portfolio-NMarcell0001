@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PCO Portfolio</title>
 
-    {{-- Compiled assets --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-<!-- Navigation bar -->
 <nav class="top-right-nav">
     <h1 align="right">
         <a href="{{ route('home') }}" class="active" title="Home Page" id="dashboard">Home Page</a>
@@ -30,12 +28,10 @@
 
 
 
-<!-- Main Content -->
 <div class="container">
-    @yield('content') <!-- This is where the page content will be injected -->
+    @yield('content')
 </div>
 
-{{-- Footer --}}
 <footer class="footer">
     <div class="container">
         <div class="content is-small has-text-centered">
